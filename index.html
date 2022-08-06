@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Signup Form</title>
+<link rel="stylesheet"  href="styles.css">
+    </head>
+    <body>
+<h1>Signup Form</h1>
+<p>Please fill out this form with the required information</p>
+<form action="https://formspree.io/f/{form_id}" method="post">
+  <fieldset>
+      <label for="name">Full Name: <input id="name" type="text" required placeholder="Enter your full name"></label>
+      <label for="email">Email: <input id="email" type="email" required placeholder="example@gmail.com"></label>
+      <label for="password">Password: <input id="passoerd" type=" password" required minlength="8" placeholder="Create your Password"></label>
+      <label for="phone number">Phone Number: <input id="phone number" type="tel" required placeholder="E.g. 999-9999-999"></label>
+      <label for="date">Date of Birth: <input id="date" type="text" placeholder="M/D/Y"
+        onfocus="(this.type='date')"></label>
+      <label for="country">Country:  <select >
+        <option>select one</option>
+        <option>Algeria</option>
+        <option>Bahrain</option>
+        <option>Egypt</option>
+        <option>Iran</option>
+        <option>Iraq</option>
+        <option>Palestine</option>
+        <option>Jordan</option>
+        <option>Kuwait </option>
+        <option>Lebanon </option>
+        <option>Libya</option>
+        <option>Morocco </option>
+        <option>Oman</option>
+        <option>Qatar</option>
+        <option>Saudi Arabia </option>
+        <option>Syria </option>
+        <option>Tunisia</option>
+        <option>United Arab Emirates </option>
+        <option>Yemen</option>
+      </select></label>
+
+  </fieldset>
+  <fieldset>
+      <label for="plan"><input type="radio" name="plan" placeholder="plan" class="inline">Free Plan </label>
+      <label for="plan"><input type="radio" name="plan" placeholder="plan" class="inline">Pro Plan </label>
+      <label for="terms&conditionsgi"><input type="checkbox" placeholder="conditions&terms" class="inline">I agree to terms and conditions</label>
+  </fieldset>
+
+  <input type="submit" value="Submit">
+  </form>
+    </body>
+
+</html>
